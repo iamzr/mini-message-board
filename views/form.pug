@@ -1,0 +1,34 @@
+extends layout
+
+block content
+    h1 New Message
+    form(
+        action="/new"
+        method="post"
+    )
+        label(
+            for="user"
+        ) Author:
+        br
+        input(
+            type="text"
+            name="user" 
+            placeholder="Your name"
+            value=""
+        )
+        br
+        label(
+            for="user"
+        ) Message:
+        br
+        input(
+            type="textarea"
+            name="text"
+            placeholder="Your message"
+            value=""
+        ) 
+        br
+        input(
+            type="submit"
+            value="submit"
+        )
